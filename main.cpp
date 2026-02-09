@@ -34,14 +34,12 @@ total_salary = base_salary + commision_total + expense;
 // final output in output.dat
 cout << firstname << " " << lastname << " " << total_salary << endl;
 
-out_data << "Payroll data for " << firstname << " " << lastname << endl;
-out_data << endl;
-out_data << "Base Salary: " <<  base_salary <<  fixed << setprecision(2) << endl;
-out_data << "Commission: " <<  commision_total <<  fixed << setprecision(2) << endl;
-out_data << "Expenses: " <<  expense << fixed << setprecision(2) << endl;
-out_data << endl;
+out_data << "Payroll data for " << firstname << " " << lastname << endl<< endl;
+out_data << "Base Salary: " << fixed << setprecision(2) << base_salary << endl;
+out_data << "Commission: " << fixed << setprecision(2) <<commision_total<< endl;
+out_data << "Expenses: " << fixed << setprecision(2) << expense << endl << endl;
 out_data << setw(15) << "--------" << endl;
-out_data << "Total: " <<  total_salary <<  fixed << setprecision(2) << endl;
+out_data << "Total: " << fixed << setprecision(2) << total_salary << endl;
 
 // closing files
 in_data.close();
